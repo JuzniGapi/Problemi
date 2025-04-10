@@ -1,0 +1,12 @@
+{
+    "id": "2",
+    "description": "Napiši funkcijo, ki vrne največji pravokotnik, ki ga lahko ustvarimo v matriki, ki vsebuje samo 1 in 0.",
+    "function_signature": "def solve(matrix: list) -> int:",
+    "input_format": "Matrični seznam `matrix`, kjer so elementi 0 in 1, bo posredovan funkciji.",
+    "output_format": "Vrni največji pravokotnik, ki ga lahko ustvarimo v dani matriki.",
+    "constraints": ["1 <= len(matrix) <= 100", "1 <= len(matrix[i]) <= 100"],
+    "examples": [
+      {"input": "matrix = [[1,0,1,0,0], [1,0,1,1,1], [1,1,1,1,1], [1,0,0,1,0]]", "output": "6"},
+      {"input": "matrix = [[0,0,1,1], [1,1,1,1], [1,1,1,1]]", "output": "6"}
+    ]
+  }

@@ -1,0 +1,12 @@
+{
+    "id": "5",
+    "description": "Napiši funkcijo, ki generira vse možne kombinacije pravilnih oklepajev za dani številki.",
+    "function_signature": "def solve(n: int) -> list:",
+    "input_format": "Celo število `n` bo posredovano funkciji.",
+    "output_format": "Vrni seznam vseh možnih pravilnih kombinacij oklepajev.",
+    "constraints": ["1 <= n <= 8"],
+    "examples": [
+      {"input": "n = 3", "output": "['((()))', '(()())', '(())()', '()(())', '()()()']"},
+      {"input": "n = 1", "output": "['()']"}
+    ]
+  }

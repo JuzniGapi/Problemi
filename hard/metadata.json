@@ -1,0 +1,63 @@
+[
+    {
+      "id": "1",
+      "title": "Prvo manjkajoče pozitivno število",
+      "difficulty": "hard",
+      "tags": ["seznam", "algoritmi"]
+    },
+    {
+      "id": "2",
+      "title": "Zajemanje dežne vode",
+      "difficulty": "hard",
+      "tags": ["seznam", "dinamično programiranje"]
+    },
+    {
+      "id": "3",
+      "title": "Združitev K urejenih seznamov",
+      "difficulty": "hard",
+      "tags": ["seznam", "podatkovne strukture"]
+    },
+    {
+      "id": "4",
+      "title": "Podniz s konkatenacijo vseh besed",
+      "difficulty": "hard",
+      "tags": ["niz", "poenostavitve"]
+    },
+    {
+      "id": "5",
+      "title": "Najdaljši palindromski podniz",
+      "difficulty": "hard",
+      "tags": ["niz", "dinamično programiranje"]
+    },
+    {
+      "id": "6",
+      "title": "Razdalja urejanja",
+      "difficulty": "hard",
+      "tags": ["dinamično programiranje", "niz"]
+    },
+    {
+      "id": "7",
+      "title": "Besedni lestev II",
+      "difficulty": "hard",
+      "tags": ["grafi", "preverjanje"]
+    },
+    {
+      "id": "8",
+      "title": "Število manjših števil po sebi",
+      "difficulty": "hard",
+      "tags": ["seznam", "algoritmi"]
+    },
+    {
+      "id": "9",
+      "title": "Deljenje palindromov II",
+      "difficulty": "hard",
+      "tags": ["dinamično programiranje", "niz"]
+    },
+    {
+      "id": "10",
+      "title": "Iskanje besed II",
+      "difficulty": "hard",
+      "tags": ["grafi", "rekurzija"]
+    }
+  ]
+  

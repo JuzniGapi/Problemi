@@ -1,0 +1,12 @@
+{
+    "id": "2",
+    "description": "Napiši funkcijo, ki obrne podani niz.",
+    "function_signature": "def solve(s: str) -> str:",
+    "input_format": "Niz `s` bo posredovan funkciji.",
+    "output_format": "Vrni niz, ki je obrnjen.",
+    "constraints": ["1 <= len(s) <= 100"],
+    "examples": [
+      {"input": "s = 'hello'", "output": "'olleh'"},
+      {"input": "s = 'world'", "output": "'dlrow'"}
+    ]
+  }

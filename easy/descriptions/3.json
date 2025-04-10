@@ -1,0 +1,12 @@
+{
+    "id": "3",
+    "description": "Napiši funkcijo, ki preveri, ali sta dva niza anagrami drug drugega.",
+    "function_signature": "def solve(s: str, t: str) -> bool:",
+    "input_format": "Dva niza `s` in `t` bosta posredovana funkciji.",
+    "output_format": "Vrni `True`, če sta niza anagrami, sicer `False`.",
+    "constraints": ["1 <= len(s), len(t) <= 5 * 10^4"],
+    "examples": [
+      {"input": "s = 'anagram', t = 'nagaram'", "output": "True"},
+      {"input": "s = 'rat', t = 'car'", "output": "False"}
+    ]
+  }

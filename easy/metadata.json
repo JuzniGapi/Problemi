@@ -1,0 +1,63 @@
+[
+    {
+      "id": "1",
+      "title": "Seštevek dveh števil",
+      "difficulty": "easy",
+      "tags": ["seznam", "poenostavitve"]
+    },
+    {
+      "id": "2",
+      "title": "Obrniti niz",
+      "difficulty": "easy",
+      "tags": ["niz", "osnovno"]
+    },
+    {
+      "id": "3",
+      "title": "Veljaven anagram",
+      "difficulty": "easy",
+      "tags": ["niz", "matematika"]
+    },
+    {
+      "id": "4",
+      "title": "Zlomi urejen seznam",
+      "difficulty": "easy",
+      "tags": ["seznam", "razvrščanje"]
+    },
+    {
+      "id": "5",
+      "title": "Najdi razliko",
+      "difficulty": "easy",
+      "tags": ["niz", "poenostavitve"]
+    },
+    {
+      "id": "6",
+      "title": "Povečaj za ena",
+      "difficulty": "easy",
+      "tags": ["seznam", "matematika"]
+    },
+    {
+      "id": "7",
+      "title": "Premakni ničle",
+      "difficulty": "easy",
+      "tags": ["seznam", "algoritmi"]
+    },
+    {
+      "id": "8",
+      "title": "Palindrom število",
+      "difficulty": "easy",
+      "tags": ["številke", "niz"]
+    },
+    {
+      "id": "9",
+      "title": "Največ zaporednih enic",
+      "difficulty": "easy",
+      "tags": ["seznam", "algoritmi"]
+    },
+    {
+      "id": "10",
+      "title": "Rimska števila v celo število",
+      "difficulty": "easy",
+      "tags": ["številke", "poenostavitve"]
+    }
+  ]
+  

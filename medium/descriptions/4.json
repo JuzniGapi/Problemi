@@ -1,0 +1,12 @@
+{
+    "id": "4",
+    "description": "Napiši funkcijo, ki vrne vse možne kombinacije črk, ki jih lahko tvorimo z danimi številkami telefonske številke.",
+    "function_signature": "def solve(digits: str) -> list:",
+    "input_format": "Niz številk `digits` bo posredovan funkciji.",
+    "output_format": "Vrni seznam vseh možnih kombinacij črk.",
+    "constraints": ["0 <= len(digits) <= 4"],
+    "examples": [
+      {"input": "digits = '23'", "output": "['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']"},
+      {"input": "digits = '2'", "output": "['a', 'b', 'c']"}
+    ]
+  }

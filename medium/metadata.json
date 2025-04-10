@@ -1,0 +1,63 @@
+[
+    {
+      "id": "1",
+      "title": "Najdaljši podniz brez ponavljajočih se znakov",
+      "difficulty": "medium",
+      "tags": ["niz", "dinamično programiranje"]
+    },
+    {
+      "id": "2",
+      "title": "Skupine anagramov",
+      "difficulty": "medium",
+      "tags": ["niz", "poenostavitve"]
+    },
+    {
+      "id": "3",
+      "title": "Štej in reci",
+      "difficulty": "medium",
+      "tags": ["niz", "matematika"]
+    },
+    {
+      "id": "4",
+      "title": "Črkovne kombinacije telefonske številke",
+      "difficulty": "medium",
+      "tags": ["niz", "rekurzija"]
+    },
+    {
+      "id": "5",
+      "title": "Generiraj oklepaje",
+      "difficulty": "medium",
+      "tags": ["rekurzija", "matematika"]
+    },
+    {
+      "id": "6",
+      "title": "Veljaven sudoku",
+      "difficulty": "medium",
+      "tags": ["matrika", "preverjanje"]
+    },
+    {
+      "id": "7",
+      "title": "Iskanje v zavrtetem urejenem seznamu",
+      "difficulty": "medium",
+      "tags": ["seznam", "algoritmi"]
+    },
+    {
+      "id": "8",
+      "title": "Rotiraj sliko",
+      "difficulty": "medium",
+      "tags": ["matrika", "algoritmi"]
+    },
+    {
+      "id": "9",
+      "title": "Načini dešifriranja",
+      "difficulty": "medium",
+      "tags": ["dinamično programiranje", "niz"]
+    },
+    {
+      "id": "10",
+      "title": "3-vsota",
+      "difficulty": "medium",
+      "tags": ["seznam", "algoritmi"]
+    }
+  ]
+  

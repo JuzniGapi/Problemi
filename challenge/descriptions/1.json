@@ -1,0 +1,12 @@
+{
+    "id": "1",
+    "description": "Napiši funkcijo, ki reši problem N-Queens. Določiti moraš postavitev N kraljic na šahovnici, da se nobeni dve kraljici ne ogrožata.",
+    "function_signature": "def solve(n: int) -> list:",
+    "input_format": "Celo število `n`, ki predstavlja število kraljic, bo posredovano funkciji.",
+    "output_format": "Vrni seznam vseh možnih rešitev, kjer so kraljice postavljene na šahovnici.",
+    "constraints": ["1 <= n <= 10"],
+    "examples": [
+      {"input": "n = 4", "output": "[[1, 3, 0, 2], [2, 0, 3, 1]]"},
+      {"input": "n = 1", "output": "[[0]]"}
+    ]
+}

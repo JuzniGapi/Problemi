@@ -1,0 +1,12 @@
+{
+    "id": "4",
+    "description": "Napiši funkcijo, ki združi dva urejena seznama v enega urejenega.",
+    "function_signature": "def solve(nums1: list, nums2: list) -> list:",
+    "input_format": "Dva urejena seznama `nums1` in `nums2` bosta posredovana funkciji.",
+    "output_format": "Vrni nov seznam, ki vsebuje vse elemente iz `nums1` in `nums2`, urejene.",
+    "constraints": ["1 <= len(nums1), len(nums2) <= 10^3"],
+    "examples": [
+      {"input": "nums1 = [1, 2, 3], nums2 = [2, 5, 6]", "output": "[1, 2, 2, 3, 5, 6]"},
+      {"input": "nums1 = [1, 4], nums2 = [2, 3, 5]", "output": "[1, 2, 3, 4, 5]"}
+    ]
+  }

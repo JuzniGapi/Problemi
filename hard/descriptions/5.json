@@ -1,0 +1,12 @@
+{
+    "id": "5",
+    "description": "Napiši funkcijo, ki vrne najdaljši palindromski podniz v danem nizu.",
+    "function_signature": "def solve(s: str) -> str:",
+    "input_format": "Niz `s` bo posredovan funkciji.",
+    "output_format": "Vrni najdaljši palindromski podniz v `s`.",
+    "constraints": ["1 <= len(s) <= 1000"],
+    "examples": [
+      {"input": "s = 'babad'", "output": "'bab'"},
+      {"input": "s = 'cbbd'", "output": "'bb'"}
+    ]
+  }

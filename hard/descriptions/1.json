@@ -1,0 +1,12 @@
+{
+    "id": "1",
+    "description": "Napiši funkcijo, ki vrne prvo manjkajoče pozitivno število v seznamu.",
+    "function_signature": "def solve(nums: list) -> int:",
+    "input_format": "Seznam `nums` bo posredovan funkciji.",
+    "output_format": "Vrni prvo manjkajoče pozitivno število.",
+    "constraints": ["1 <= len(nums) <= 10^5"],
+    "examples": [
+      {"input": "nums = [1, 2, 0]", "output": "3"},
+      {"input": "nums = [3, 4, -1, 1]", "output": "2"}
+    ]
+  }

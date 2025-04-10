@@ -1,0 +1,12 @@
+{
+    "id": "2",
+    "description": "Napiši funkcijo, ki združi anagrame v seznam, kjer so vsi anagrami skupaj.",
+    "function_signature": "def solve(strs: list) -> list:",
+    "input_format": "Seznam nizov `strs` bo posredovan funkciji.",
+    "output_format": "Vrni seznam seznamov, kjer so anagrami skupaj.",
+    "constraints": ["1 <= len(strs) <= 10^4", "1 <= len(strs[i]) <= 100"],
+    "examples": [
+      {"input": "strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']", "output": "[['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]"},
+      {"input": "strs = ['a'] ", "output": "[['a']]"}
+    ]
+  }

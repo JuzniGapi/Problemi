@@ -1,0 +1,12 @@
+{
+    "id": "1",
+    "description": "Napiši funkcijo, ki vrne dolžino najdaljšega podniza, ki ne vsebuje ponavljajočih se znakov.",
+    "function_signature": "def solve(s: str) -> int:",
+    "input_format": "Niz `s` bo posredovan funkciji.",
+    "output_format": "Vrni dolžino najdaljšega podniza brez ponavljajočih se znakov.",
+    "constraints": ["1 <= len(s) <= 10^4"],
+    "examples": [
+      {"input": "s = 'abcabcbb'", "output": "3"},
+      {"input": "s = 'bbbbb'", "output": "1"}
+    ]
+ }

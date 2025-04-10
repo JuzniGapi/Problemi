@@ -1,0 +1,63 @@
+[
+    {
+      "id": "1",
+      "title": "N-queens problem",
+      "difficulty": "challenge",
+      "tags": ["podatkovne strukture", "rekurzija"]
+    },
+    {
+      "id": "2",
+      "title": "Največji pravokotnik",
+      "difficulty": "challenge",
+      "tags": ["matrika", "dinamično programiranje"]
+    },
+    {
+      "id": "3",
+      "title": "Ujemanje z regularnimi izrazi",
+      "difficulty": "challenge",
+      "tags": ["rekurzija", "dinamično programiranje"]
+    },
+    {
+      "id": "4",
+      "title": "Besedni lestev",
+      "difficulty": "challenge",
+      "tags": ["grafi", "preverjanje"]
+    },
+    {
+      "id": "5",
+      "title": "Največji pravokotnik v histogramu",
+      "difficulty": "challenge",
+      "tags": ["matrika", "algoritmi"]
+    },
+    {
+      "id": "6",
+      "title": "Najdaljši veljavni oklepaji",
+      "difficulty": "challenge",
+      "tags": ["niz", "rekurzija"]
+    },
+    {
+      "id": "7",
+      "title": "Prvi edinstveni znak v nizu",
+      "difficulty": "challenge",
+      "tags": ["niz", "preverjanje"]
+    },
+    {
+      "id": "8",
+      "title": "Združitev intervalov",
+      "difficulty": "challenge",
+      "tags": ["intervali", "algoritmi"]
+    },
+    {
+      "id": "9",
+      "title": "Najmanjši razpon, ki pokriva elemente iz K seznamov",
+      "difficulty": "challenge",
+      "tags": ["matrika", "algoritmi"]
+    },
+    {
+      "id": "10",
+      "title": "Popolni kvadrati",
+      "difficulty": "challenge",
+      "tags": ["dinamično programiranje", "matematika"]
+    }
+  ]
+  

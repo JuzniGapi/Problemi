@@ -1,0 +1,12 @@
+{
+    "id": "3",
+    "description": "Napiši funkcijo, ki združi K urejenih seznamov v enega urejenega.",
+    "function_signature": "def solve(lists: list) -> list:",
+    "input_format": "Seznam seznamov `lists` bo posredovan funkciji.",
+    "output_format": "Vrni nov seznam, ki je združitev vseh K seznamov, urejen.",
+    "constraints": ["1 <= len(lists) <= 10^4", "1 <= len(lists[i]) <= 500"],
+    "examples": [
+      {"input": "lists = [[1,4,5],[1,3,4],[2,6]]", "output": "[1, 1, 2, 3, 4, 4, 5, 6]"},
+      {"input": "lists = [[1, 2], [3, 4], [5, 6]]", "output": "[1, 2, 3, 4, 5, 6]"}
+    ]
+  }

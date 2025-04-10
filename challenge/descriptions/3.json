@@ -1,0 +1,12 @@
+{
+    "id": "3",
+    "description": "Napiši funkcijo, ki preveri, ali niz ustreza regularnemu izrazu z uporabo točno dveh vrst simbolov: '.' in '*'.",
+    "function_signature": "def solve(s: str, p: str) -> bool:",
+    "input_format": "Niz `s` in niz `p`, ki predstavlja regularni izraz, bosta posredovana funkciji.",
+    "output_format": "Vrni True, če niz `s` ustreza regularnemu izrazu `p`, sicer False.",
+    "constraints": ["1 <= len(s), len(p) <= 20"],
+    "examples": [
+      {"input": "s = 'aa', p = 'a*'", "output": "True"},
+      {"input": "s = 'mississippi', p = 'mis*is*p*.'", "output": "False"}
+    ]
+  }

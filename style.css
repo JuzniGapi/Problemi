@@ -1,0 +1,80 @@
+body{
+
+    background-image: linear-gradient(to bottom right, #ffffff, #dddddd);
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 51, 95);
+    width: 100vw;
+    height: 100vh;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    overflow: hidden;
+}
+.cot{
+    margin: 0;
+  
+  width:100%;
+  text-align: center;
+  border-radius: 40px;
+background: #e0e0e0;
+box-shadow:  38px 38px 76px #b3b3b3,
+             -38px -38px 76px #ffffff;
+}
+
+.container{
+    margin-top: 50px;
+    justify-self: center;
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px;
+    width: 30%;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cot:hover{
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: rgb(0, 51, 95);
+    box-shadow: inset 2px 2px 5px #a0a0a0, inset -2px -2px 5px #ffffff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus {
+    box-shadow: 0 0 5px #a0a0a0;
+    outline: none;
+}
+.problems{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
+}
+
+.problem:hover{
+    border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  22px 22px 45px #cacaca,
+             -22px -22px 45px #f6f6f6;
+
+display: inline-block;
+cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    transition: all .3s ease;
+}

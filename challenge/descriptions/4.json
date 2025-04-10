@@ -1,0 +1,12 @@
+{
+    "id": "4",
+    "description": "Napiši funkcijo, ki vrne najkrajšo pot od ene besede do druge, kjer vsaka beseda v poti spremeni samo eno črko naenkrat.",
+    "function_signature": "def solve(beginWord: str, endWord: str, wordList: list) -> int:",
+    "input_format": "Niz `beginWord`, `endWord` in seznam besed `wordList` bodo posredovani funkciji.",
+    "output_format": "Vrni dolžino najkrajše poti od `beginWord` do `endWord`.",
+    "constraints": ["1 <= len(beginWord), len(endWord) <= 10", "1 <= len(wordList) <= 5000"],
+    "examples": [
+      {"input": "beginWord = 'hit', endWord = 'cog', wordList = ['hot', 'dot', 'dog', 'lot', 'log', 'cog']", "output": "5"},
+      {"input": "beginWord = 'hit', endWord = 'cog', wordList = ['hot', 'dot', 'dog', 'lot', 'log']", "output": "0"}
+    ]
+  }

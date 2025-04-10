@@ -1,0 +1,12 @@
+{
+    "id": "3",
+    "description": "Napiši funkcijo, ki generira n-ti člen sekvence 'Štej in reci'.",
+    "function_signature": "def solve(n: int) -> str:",
+    "input_format": "Celo število `n` bo posredovano funkciji.",
+    "output_format": "Vrni n-ti člen sekvence 'Štej in reci'.",
+    "constraints": ["1 <= n <= 30"],
+    "examples": [
+      {"input": "n = 1", "output": "'1'"},
+      {"input": "n = 4", "output": "'1211'"}
+    ]
+  }
