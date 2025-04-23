@@ -14,14 +14,14 @@
     "tags": ["nizi", "rekurzija"]
   },
   {
-    "id": 13,
+    "id": 3,
     "title": "Najdaljša Beseda",
     "note": "Poišči najdaljšo besedo v nizu.",
     "difficulty": "normal",
     "tags": ["nizi", "seznami"]
   },
   {
-    "id": 14,
+    "id": 4,
     "title": "Fibonaccijevo Zaporedje",
     "note": "Izračunaj n-to Fibonaccijevo število.",
     "difficulty": "normal",
