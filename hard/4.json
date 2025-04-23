@@ -1,0 +1,26 @@
+{
+  "id": 4,
+  "description": "Napiši funkcijo `velika_zacetnica(s: str) -> str`, ki spremeni prvo črko vsake besede v veliko začetnico.",
+  "function_signature": "def velika_zacetnica(s: str) -> str:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni niz z velikimi začetnicami.",
+  "constraints": ["Ohrani originalne presledke in ločila."],
+  "examples": [
+    {
+      "input": "s = 'hello world'",
+      "output": "Hello World",
+      "explanation": "Preprosta pretvorba."
+    },
+    {
+      "input": "s = '1 apple a day'",
+      "output": "1 Apple A Day",
+      "explanation": "Številke ostanejo nespremenjene."
+    },
+    {
+      "input": "s = 'mOj pSst'",
+      "output": "Moj Psst",
+      "explanation": "Popravi velike črke v besedah."
+    }
+  ],
+  "solution": "def velika_zacetnica(s: str) -> str:\n    return ' '.join(word.capitalize() for word in s.split())"
+}

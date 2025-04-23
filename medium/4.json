@@ -1,0 +1,26 @@
+{
+  "id": 4,
+  "description": "Napiši funkcijo `prestej_enke(n: int) -> int`, ki prešteje število enk v binarni predstavitvi števila.",
+  "function_signature": "def prestej_enke(n: int) -> int:",
+  "input_format": "Celo število `n` (0 ≤ n ≤ 10^6).",
+  "output_format": "Vrni število enk v binarnem zapisu.",
+  "constraints": ["Ne uporabljaj vgrajene funkcije bin()."],
+  "examples": [
+    {
+      "input": "n = 0",
+      "output": "0",
+      "explanation": "0 v binarnem je 0 (ni enk)."
+    },
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "1 v binarnem je 1 (ena enka)."
+    },
+    {
+      "input": "n = 13",
+      "output": "3",
+      "explanation": "13 je 1101 v binarnem (3 enke)."
+    }
+  ],
+  "solution": "def prestej_enke(n: int) -> int:\n    count = 0\n    while n > 0:\n        count += n % 2\n        n = n // 2\n    return count"
+}

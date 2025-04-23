@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "description": "Napiši funkcijo `vsota_diagonal(matrika: list[list[int]]) -> int`, ki izračuna vsoto obeh diagonal kvadratne matrike.",
+  "function_signature": "def vsota_diagonal(matrika: list[list[int]]) -> int:",
+  "input_format": "Kvadratna matrika velikosti N x N (1 ≤ N ≤ 100).",
+  "output_format": "Vrni vsoto glavne in stranske diagonale.",
+  "constraints": [
+    "Matrika vsebuje samo cela števila.",
+    "Matrika je vedno kvadratna."
+  ],
+  "examples": [
+    {
+      "input": "matrika = [[1,0],[0,1]]",
+      "output": "2",
+      "explanation": "Vsota obeh diagonal je 1+1 = 2."
+    },
+    {
+      "input": "matrika = [[5]]",
+      "output": "10",
+      "explanation": "Edini element šteje za obe diagonali."
+    },
+    {
+      "input": "matrika = [[1,2,3],[4,5,6],[7,8,9]]",
+      "output": "30",
+      "explanation": "Glavna:1+5+9=15, stranska:3+5+7=15, skupaj 30."
+    }
+  ],
+  "solution": "def vsota_diagonal(matrika: list[list[int]]) -> int:\n    n = len(matrika)\n    return sum(matrika[i][i] + matrika[i][n-1-i] for i in range(n))"
+}

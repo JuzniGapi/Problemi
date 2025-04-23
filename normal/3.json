@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "description": "Napiši funkcijo `najdaljsa_beseda(s: str) -> str`, ki poišče in vrne najdaljšo besedo v nizu. Če je več enako dolgih, vrni prvo.",
+  "function_signature": "def najdaljsa_beseda(s: str) -> str:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni najdaljšo besedo.",
+  "constraints": [
+    "Besede so ločene s presledki.",
+    "Ločila se štejejo kot del besede."
+  ],
+  "examples": [
+    {
+      "input": "s = 'Hitro teče'",
+      "output": "Hitro",
+      "explanation": "Prva beseda je daljša."
+    },
+    {
+      "input": "s = 'a bb ccc dddd'",
+      "output": "dddd",
+      "explanation": "Zadnja beseda je najdaljša."
+    },
+    {
+      "input": "s = 'enako dolge'",
+      "output": "enako",
+      "explanation": "Dve enako dolgi besedi - vrne prvo."
+    }
+  ],
+  "solution": "def najdaljsa_beseda(s: str) -> str:\n    return max(s.split(), key=len)"
+}

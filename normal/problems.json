@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Drugo največje število",
+    "note": "Funkcija poišče drugo največje število v seznamu.",
+    "difficulty": "normal",
+    "tags": ["seznami", "urejanje", "pogoji"]
+  },
+  {
+    "id": 2,
+    "title": "Uravnoteženi oklepaji",
+    "note": "Preveri, ali so oklepaji v nizu pravilno uravnoteženi.",
+    "difficulty": "normal",
+    "tags": ["nizi", "rekurzija"]
+  },
+  {
+    "id": 13,
+    "title": "Najdaljša Beseda",
+    "note": "Poišči najdaljšo besedo v nizu.",
+    "difficulty": "normal",
+    "tags": ["nizi", "seznami"]
+  },
+  {
+    "id": 14,
+    "title": "Fibonaccijevo Zaporedje",
+    "note": "Izračunaj n-to Fibonaccijevo število.",
+    "difficulty": "normal",
+    "tags": ["rekurzija", "matematika"]
+  }
+]

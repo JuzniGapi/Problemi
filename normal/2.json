@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "description": "Napiši funkcijo `uravnotezeni_oklepaji(s)`, ki preveri, ali so vsi oklepaji v nizu `s` pravilno uravnoteženi (vsak `(` ima svoj `)`).",
+  "function_signature": "def uravnotezeni_oklepaji(s: str) -> bool:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov, ki lahko vsebuje `(`, `)` in druge znake.",
+  "output_format": "Vrni `True`, če so oklepaji uravnoteženi, sicer `False`.",
+  "constraints": ["Niz lahko vsebuje poljubne znake."],
+  "examples": [
+    {
+      "input": "s = '(a + (b * c))'",
+      "output": "True",
+      "explanation": "Vsi oklepaji se pravilno zaprejo."
+    },
+    {
+      "input": "s = ')(nekaj'",
+      "output": "False",
+      "explanation": "Prvi oklepaj je `)`, kar je neuravnoteženo."
+    }
+  ],
+  "solution": "def uravnotezeni_oklepaji(s: str) -> bool:\n    sklad = []\n    for znak in s:\n        if znak == '(':\n            sklad.append(znak)\n        elif znak == ')':\n            if not sklad:\n                return False\n            sklad.pop()\n    return len(sklad) == 0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "description": "Napiši funkcijo `desifriraj_sporocilo(s)`, ki dekodira niz `s`, kjer je bila vsaka črka originalnega sporočila premaknjena za 3 mesta naprej v abecedi (npr. 'A' → 'D', 'Z' → 'C'). Ne spreminjaj ne-črk.",
+  "function_signature": "def desifriraj_sporocilo(s: str) -> str:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni dekodiran niz.",
+  "constraints": ["Niz vsebuje samo ASCII znake."],
+  "examples": [
+    {
+      "input": "s = 'Khoor, Zruog!'",
+      "output": "'Hello, World!'",
+      "explanation": "Vsaka črka je premaknjena za 3 nazaj."
+    },
+    {
+      "input": "s = 'D oljhlud UDSR'",
+      "output": "'A nice Pizza'",
+      "explanation": "Številke in presledki ostanejo nespremenjeni."
+    }
+  ],
+  "solution": "def desifriraj_sporocilo(s: str) -> str:\n    rezultat = []\n    for znak in s:\n        if znak.isalpha():\n            premik = ord(znak) - 3\n            if znak.islower() and premik < ord('a'):\n                premik += 26\n            elif znak.isupper() and premik < ord('A'):\n                premik += 26\n            rezultat.append(chr(premik))\n        else:\n            rezultat.append(znak)\n    return ''.join(rezultat)"
+}

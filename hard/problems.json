@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Popravi čas",
+    "note": "Funkcija pristeje sekunde k časovnemu nizu in obravnava prehod čez polnoč.",
+    "difficulty": "hard",
+    "tags": ["nizi", "modularna aritmetika", "pogoji"]
+  },
+  {
+    "id": 2,
+    "title": "Minimalno število korakov",
+    "note": "Izračunaj minimalno število korakov za pretvorbo enega niza v drugega.",
+    "difficulty": "hard",
+    "tags": ["nizi", "seznami"]
+  },
+  {
+    "id": 3,
+    "title": "Najdaljše Zaporedje Enakih",
+    "note": "Poišči dolžino najdaljšega zaporedja enakih števil v seznamu.",
+    "difficulty": "hard",
+    "tags": ["seznami", "optimizacija"]
+  },
+  {
+    "id": 4,
+    "title": "Velika Začetnica",
+    "note": "Spremeni prvo črko vsake besede v veliko začetnico.",
+    "difficulty": "hard",
+    "tags": ["nizi", "seznami"]
+  }
+]

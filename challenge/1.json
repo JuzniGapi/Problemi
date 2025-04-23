@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "description": "Napiši funkcijo `kaos_kocke(max_metov: int, seed: int = 42) -> str`, ki simulira igro dveh igralcev z metom kocke (1-6). Igralec A mete v lihih korakih, B v sodih. A zmaga pri 6, B pri 2 ali 4. Uporabi `random.seed(seed)` za ponovljivost.",
+  "function_signature": "def kaos_kocke(max_metov: int, seed: int = 42) -> str:",
+  "input_format": "`max_metov`: največje število metov (1-100), `seed`: začetno število za generator (privzeto 42).",
+  "output_format": "Vrni 'A', 'B' ali 'Tie'.",
+  "constraints": [
+    "Uporabi random.randint(1, 6) za met kocke",
+    "Uporabi random.seed(seed) pred zanko"
+  ],
+  "examples": [
+    {
+      "input": "max_metov = 3\nseed = 42",
+      "output": "'A'",
+      "explanation": "Pri seed=42: A=6 (zmagal takoj)"
+    },
+    {
+      "input": "max_metov = 2\nseed = 123",
+      "output": "'B'",
+      "explanation": "Pri seed=123: A=4, B=2 (B zmaga)"
+    }
+  ],
+  "solution": "import random\ndef kaos_kocke(max_metov: int, seed: int = 42) -> str:\n    random.seed(seed)\n    for i in range(max_metov):\n        met = random.randint(1, 6)\n        if i % 2 == 0 and met == 6:\n            return 'A'\n        elif i % 2 == 1 and met in (2, 4):\n            return 'B'\n    return 'Tie'"
+}

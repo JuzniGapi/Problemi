@@ -1,0 +1,29 @@
+{
+  "id": 4,
+  "description": "Napiši funkcijo `je_magicni_kvadrat(matrika: list[list[int]]) -> bool`, ki preveri, ali je matrika magični kvadrat (vsote v vrsticah, stolpcih in diagonalah so enake).",
+  "function_signature": "def je_magicni_kvadrat(matrika: list[list[int]]) -> bool:",
+  "input_format": "Kvadratna matrika velikosti N x N (1 ≤ N ≤ 50).",
+  "output_format": "Vrni `True` ali `False`.",
+  "constraints": [
+    "Matrika vsebuje samo cela števila.",
+    "1 ≤ matrika[i][j] ≤ 1000"
+  ],
+  "examples": [
+    {
+      "input": "matrika = [[2,2],[2,2]]",
+      "output": "True",
+      "explanation": "Vse vsote so enake 4."
+    },
+    {
+      "input": "matrika = [[1,2],[3,4]]",
+      "output": "False",
+      "explanation": "Vsote se ne ujemajo."
+    },
+    {
+      "input": "matrika = [[8,1,6],[3,5,7],[4,9,2]]",
+      "output": "True",
+      "explanation": "Klasični magični kvadrat z vsoto 15."
+    }
+  ],
+  "solution": "def je_magicni_kvadrat(matrika: list[list[int]]) -> bool:\n    n = len(matrika)\n    target = sum(matrika[0])\n    \n    # Preveri vrstice\n    if any(sum(row) != target for row in matrika):\n        return False\n    \n    # Preveri stolpce\n    if any(sum(matrika[i][j] for i in range(n)) != target for j in range(n)):\n        return False\n    \n    # Preveri diagonale\n    if sum(matrika[i][i] for i in range(n)) != target:\n        return False\n    if sum(matrika[i][n-1-i] for i in range(n)) != target:\n        return False\n    \n    return True"
+}

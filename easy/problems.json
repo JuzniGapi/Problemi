@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Obrni niz",
+    "note": "Funkcija vrne obrnjen niz brez uporabe vgrajenih metod.",
+    "difficulty": "easy",
+    "tags": ["nizi", "zanke", "osnove"]
+  },
+  {
+    "id": 2,
+    "title": "Preštej samoglasnike",
+    "note": "Funkcija prešteje, koliko samoglasnikov vsebuje niz.",
+    "difficulty": "easy",
+    "tags": ["nizi", "pogoji", "osnove"]
+  },
+  {
+    "id": 3,
+    "title": "Preveri Palindrom",
+    "note": "Preveri, ali je niz palindrom (bere se enako naprej in nazaj).",
+    "difficulty": "easy",
+    "tags": ["nizi", "osnove"]
+  },
+  {
+    "id": 4,
+    "title": "Povprečje Seznama",
+    "note": "Izračunaj povprečje števil v seznamu.",
+    "difficulty": "easy",
+    "tags": ["seznami", "osnove"]
+  }
+]

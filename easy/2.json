@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "description": "Napiši funkcijo `prestej_samoglasnike(s)`, ki vrne število samoglasnikov (a, e, i, o, u) v nizu, ne glede na velikost črk.",
+  "function_signature": "def prestej_samoglasnike(s: str) -> int:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni celo število (število samoglasnikov).",
+  "constraints": ["Niz lahko vsebuje poljubne znake."],
+  "examples": [
+    {
+      "input": "s = 'Programming'",
+      "output": "3",
+      "explanation": "Samoglasniki so 'o', 'a', 'i'."
+    },
+    {
+      "input": "s = 'XYZ'",
+      "output": "0",
+      "explanation": "Ni samoglasnikov."
+    }
+  ],
+  "solution": "def prestej_samoglasnike(s: str) -> int:\n    samoglasniki = 'aeiouAEIOU'\n    return sum(1 for znak in s if znak in samoglasniki)"
+}

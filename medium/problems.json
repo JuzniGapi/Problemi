@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Šifrirano sporočilo",
+    "note": "Dekodiraj sporočilo, kjer so črke premaknjene za 3 mesta naprej v abecedi.",
+    "difficulty": "medium",
+    "tags": ["nizi", "ASCII", "zanke"]
+  },
+  {
+    "id": 2,
+    "title": "Pot v labirintu",
+    "note": "Preveri, ali je mogoče priti iz začetne točke do cilja v 2D labirintu.",
+    "difficulty": "medium",
+    "tags": ["seznami", "rekurzija", "iskanje"]
+  },
+  {
+    "id": 3,
+    "title": "Kvadratna Matrika",
+    "note": "Izračunaj vsoto diagonal kvadratne matrike.",
+    "difficulty": "medium",
+    "tags": ["matrike", "seznami"]
+  },
+  {
+    "id": 4,
+    "title": "Preštej Enke v Binarnem",
+    "note": "Preštej število enk v binarni predstavitvi števila.",
+    "difficulty": "medium",
+    "tags": ["matematika", "nizi"]
+  }
+]

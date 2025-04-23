@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "description": "Napiši funkcijo `min_koraki(niz1, niz2)`, ki izračuna minimalno število operacij (dodaj znak, zbriši znak, zamenjaj znak) za pretvorbo `niz1` v `niz2`.",
+  "function_signature": "def min_koraki(niz1: str, niz2: str) -> int:",
+  "input_format": "Niza `niz1` in `niz2` dolžine do 100 znakov.",
+  "output_format": "Vrni celo število (minimalno število operacij).",
+  "constraints": ["Niza vsebujeta samo male angleške črke."],
+  "examples": [
+    {
+      "input": "niz1 = 'konj'\nniz2 = 'kol'",
+      "output": "2",
+      "explanation": "Zamenjaj 'n' → 'l', zbriši 'j'."
+    },
+    {
+      "input": "niz1 = 'abc'\nniz2 = 'def'",
+      "output": "3",
+      "explanation": "Vse znake je treba zamenjati."
+    }
+  ],
+  "solution": "def min_koraki(niz1: str, niz2: str) -> int:\n    if len(niz1) == 0:\n        return len(niz2)\n    if len(niz2) == 0:\n        return len(niz1)\n    if niz1[0] == niz2[0]:\n        return min_koraki(niz1[1:], niz2[1:])\n    return 1 + min(\n        min_koraki(niz1[1:], niz2),      # Brisanje\n        min_koraki(niz1, niz2[1:]),      # Dodajanje\n        min_koraki(niz1[1:], niz2[1:])   # Zamenjava\n    )"
+}

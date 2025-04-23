@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "description": "Napiši funkcijo `obrni_niz(s)`, ki vrne obrnjen niz brez uporabe vgrajenih metod (npr. `[::-1]`).",
+  "function_signature": "def obrni_niz(s: str) -> str:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni obrnjen niz.",
+  "constraints": ["Niz vsebuje samo tiskane ASCII znake."],
+  "examples": [
+    {
+      "input": "s = 'hello'",
+      "output": "'olleh'",
+      "explanation": "Niz je obrnjen znak po znak."
+    },
+    {
+      "input": "s = '12345'",
+      "output": "'54321'",
+      "explanation": "Številke so obrnjene."
+    }
+  ],
+  "solution": "def obrni_niz(s: str) -> str:\n    obrnjen = ''\n    for znak in s:\n        obrnjen = znak + obrnjen\n    return obrnjen"
+}

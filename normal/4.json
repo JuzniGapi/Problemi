@@ -1,0 +1,26 @@
+{
+  "id": 14,
+  "description": "Napiši funkcijo `fibonacci(n: int) -> int`, ki vrne n-to Fibonaccijevo število (zaporedje: 0, 1, 1, 2, 3, 5, ...).",
+  "function_signature": "def fibonacci(n: int) -> int:",
+  "input_format": "Celo število `n` (0 ≤ n ≤ 30).",
+  "output_format": "Vrni n-to Fibonaccijevo število.",
+  "constraints": ["Uporabi iterativno rešitev (ne rekurzijo)."],
+  "examples": [
+    {
+      "input": "n = 0",
+      "output": "0",
+      "explanation": "Začetni element zaporedja."
+    },
+    {
+      "input": "n = 5",
+      "output": "5",
+      "explanation": "Peti element je 5 (0,1,1,2,3,5)."
+    },
+    {
+      "input": "n = 8",
+      "output": "21",
+      "explanation": "Osmi element je 21."
+    }
+  ],
+  "solution": "def fibonacci(n: int) -> int:\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a"
+}

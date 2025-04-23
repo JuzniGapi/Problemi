@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Kaos s kockami",
+    "note": "Simuliraj igro z dvema igralcema, kjer zmaga glede na met kocke.",
+    "difficulty": "challenge",
+    "tags": ["naključnost", "zanke", "pogoji"]
+  },
+  {
+    "id": 2,
+    "title": "Maksimalno število točk v matriki",
+    "note": "Poišči maksimalno število točk, ki jih lahko zbereš v matriki z določenimi pravili.",
+    "difficulty": "challenge",
+    "tags": ["matrike", "optimizacija"]
+  },
+  {
+    "id": 3,
+    "title": "Pravokotnik z Največjo Površino",
+    "note": "Poišči največjo površino pravokotnika, ki ga lahko narišemo znotraj stolpcev histograma.",
+    "difficulty": "challenge",
+    "tags": ["seznami", "optimizacija"]
+  },
+  {
+    "id": 4,
+    "title": "Magični Kvadrat",
+    "note": "Preveri, ali je matrika magični kvadrat (vsote vrstic, stolpcev in diagonal so enake).",
+    "difficulty": "challenge",
+    "tags": ["matrike", "matematika"]
+  }
+]

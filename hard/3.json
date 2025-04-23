@@ -1,0 +1,26 @@
+{
+  "id": 3,
+  "description": "Napiši funkcijo `najdaljse_zaporedje(seznam: list[int]) -> int`, ki poišče dolžino najdaljšega zaporedja enakih števil v seznamu.",
+  "function_signature": "def najdaljse_zaporedje(seznam: list[int]) -> int:",
+  "input_format": "Seznam celih števil `seznam` dolžine 1 do 10^5.",
+  "output_format": "Vrni dolžino najdaljšega zaporedja.",
+  "constraints": ["-1000 ≤ seznam[i] ≤ 1000"],
+  "examples": [
+    {
+      "input": "seznam = [7,7,7]",
+      "output": "3",
+      "explanation": "Vsa števila so enaka."
+    },
+    {
+      "input": "seznam = [1,2,3]",
+      "output": "1",
+      "explanation": "Ni ponavljajočih se števil."
+    },
+    {
+      "input": "seznam = [5,5,3,3,3,2,5,5]",
+      "output": "3",
+      "explanation": "Najdaljše zaporedje treh 3."
+    }
+  ],
+  "solution": "def najdaljse_zaporedje(seznam: list[int]) -> int:\n    if not seznam:\n        return 0\n    max_len = current_len = 1\n    for i in range(1, len(seznam)):\n        if seznam[i] == seznam[i-1]:\n            current_len += 1\n            max_len = max(max_len, current_len)\n        else:\n            current_len = 1\n    return max_len"
+}

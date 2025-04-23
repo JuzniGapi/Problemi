@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "description": "Napiši funkcijo `pot_v_labirintu(labirint, x, y)`, ki preveri, ali lahko robot na začetni poziciji `(x, y)` v 2D labirintu (označen z 0=zid, 1=pot) pride do spodnjega desnega kota z gibanjem **desno ali dol**.",
+  "function_signature": "def pot_v_labirintu(labirint: list[list[int]], x: int, y: int) -> bool:",
+  "input_format": "Labirint je seznam seznamov (velikost do 10x10), `x` in `y` sta veljavni indeksi.",
+  "output_format": "Vrni `True`, če obstaja pot, sicer `False`.",
+  "constraints": ["Robot se ne more premikati diagonalno ali nazaj."],
+  "examples": [
+    {
+      "input": "labirint = [[1,0,0], [1,1,0], [0,1,1]]\nx, y = 0, 0",
+      "output": "True",
+      "explanation": "Pot: Desno → Dol → Dol."
+    },
+    {
+      "input": "labirint = [[1,0], [0,1]]\nx, y = 0, 0",
+      "output": "False",
+      "explanation": "Robot je blokiran."
+    }
+  ],
+  "solution": "def pot_v_labirintu(labirint: list[list[int]], x: int, y: int) -> bool:\n    if x == len(labirint)-1 and y == len(labirint[0])-1:\n        return True\n    if x >= len(labirint) or y >= len(labirint[0]) or labirint[x][y] == 0:\n        return False\n    return pot_v_labirintu(labirint, x+1, y) or pot_v_labirintu(labirint, x, y+1)"
+}

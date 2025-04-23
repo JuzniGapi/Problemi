@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "description": "Napiši funkcijo `popravi_cas(cas, dodaj)`, ki k časovnemu nizu `cas` (oblika `'HH:MM:SS'`) pristeje `dodaj` sekund in vrne nov čas, ki obravnava prehod čez polnoč. Ne uporabljaj `datetime` modula!",
+  "function_signature": "def popravi_cas(cas: str, dodaj: int) -> str:",
+  "input_format": "`cas` je veljaven čas (npr. '23:59:59'), `dodaj` je celo število (0 do 10^6).",
+  "output_format": "Vrni čas v formatu `'HH:MM:SS'`.",
+  "constraints": ["`dodaj` je nenegativen."],
+  "examples": [
+    {
+      "input": "cas = '23:59:59'\ndodaj = 5",
+      "output": "'00:00:04'",
+      "explanation": "Prestop čez polnoč."
+    },
+    {
+      "input": "cas = '12:30:00'\ndodaj = 3600",
+      "output": "'13:30:00'",
+      "explanation": "Dodan 1 uro (3600 sekund)."
+    }
+  ],
+  "solution": "def popravi_cas(cas: str, dodaj: int) -> str:\n    h, m, s = map(int, cas.split(':'))\n    total = h * 3600 + m * 60 + s + dodaj\n    h = (total // 3600) % 24\n    m = (total % 3600) // 60\n    s = total % 60\n    return f\"{h:02d}:{m:02d}:{s:02d}\""
+}

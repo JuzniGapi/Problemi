@@ -1,0 +1,29 @@
+{
+  "id": 3,
+  "description": "Napiši funkcijo `je_palindrom(s: str) -> bool`, ki vrne `True`, če je niz `s` palindrom (bere se enako od spredaj in od zadaj). Ne upoštevaj velikosti črk, presledkov in ločil.",
+  "function_signature": "def je_palindrom(s: str) -> bool:",
+  "input_format": "Niz `s` dolžine 1 do 1000 znakov.",
+  "output_format": "Vrni `True` ali `False`.",
+  "constraints": [
+    "Niz lahko vsebuje črke, številke in ločila.",
+    "Funkcija mora ignorirati velikost črk (A == a)."
+  ],
+  "examples": [
+    {
+      "input": "s = 'Jej'",
+      "output": "True",
+      "explanation": "Preprost palindrom z liho dolžino."
+    },
+    {
+      "input": "s = 'Aha! Aha!'",
+      "output": "True",
+      "explanation": "Palindrom z ločili in presledki."
+    },
+    {
+      "input": "s = 'Python'",
+      "output": "False",
+      "explanation": "Ni palindrom."
+    }
+  ],
+  "solution": "def je_palindrom(s: str) -> bool:\n    cisti_s = ''.join(c.lower() for c in s if c.isalnum())\n    return cisti_s == cisti_s[::-1]"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 3,
+
+  "difficulty": "hard",
+  "tags": ["seznami", "optimizacija"],
+  "description": "Napiši funkcijo, ki izračuna največjo možno površino pravokotnika v histogramu. Pravokotnik mora imeti enakomerno višino (enako najnižjemu stolpcu v izbranem območju) in mora segati čez enega ali več sosednjih stolpcev.",
+  "function_signature": "def max_povrsina(visine: list[int]) -> int:",
+  "input_format": "Seznam celih števil, ki predstavljajo višine stolpcev (npr. [2,1,5,6,2]).",
+  "output_format": "Celo število, ki predstavlja največjo površino.",
+  "constraints": [
+    "1 ≤ dolžina seznama ≤ 100.000",
+    "0 ≤ višina stolpca ≤ 10.000"
+  ],
+  "examples": [
+    {
+      "input": "visine = [2,4]",
+      "output": "4",
+      "explanation": "Pravokotnik 2×2 ali 4×1 (večja je 4)"
+    },
+    {
+      "input": "visine = [2,1,2]",
+      "output": "3",
+      "explanation": "Pravokotnik 3×1 (omejen z najnižjim stolpcem)"
+    },
+    {
+      "input": "visine = [5,5,5]",
+      "output": "15",
+      "explanation": "Celoten histogram je en velik pravokotnik"
+    }
+  ],
+  "solution": "def max_povrsina(visine):\n    stack = []\n    max_p = 0\n    for i, h in enumerate(visine + [0]):\n        while stack and h < visine[stack[-1]]:\n            height = visine[stack.pop()]\n            width = i if not stack else i - stack[-1] - 1\n            max_p = max(max_p, height * width)\n        stack.append(i)\n    return max_p"
+}

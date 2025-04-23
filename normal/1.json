@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "description": "Napiši funkcijo `drugo_najvecje(seznam)`, ki vrne drugo največje število v seznamu. Predpostavi, da ima seznam vsaj dve različni števili.",
+  "function_signature": "def drugo_najvecje(seznam: list[int]) -> int:",
+  "input_format": "Seznam celih števil `seznam` dolžine 2 do 10^5.",
+  "output_format": "Vrni drugo največje število.",
+  "constraints": ["-10^6 <= seznam[i] <= 10^6"],
+  "examples": [
+    {
+      "input": "seznam = [5, 1, 9, 7, 2]",
+      "output": "7",
+      "explanation": "Največje je 9, drugo največje je 7."
+    },
+    {
+      "input": "seznam = [4, 4, 4, 4]",
+      "output": "4",
+      "explanation": "Vsi elementi so enaki, zato je 'drugo največje' prav tako 4."
+    }
+  ],
+  "solution": "def drugo_najvecje(seznam: list[int]) -> int:\n    unikatni = list(set(seznam))\n    unikatni.sort()\n    return unikatni[-2] if len(unikatni) >= 2 else unikatni[0]"
+}

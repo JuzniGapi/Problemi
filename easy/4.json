@@ -1,0 +1,26 @@
+{
+  "id": 4,
+  "description": "Napiši funkcijo `povprecje(seznam: list[int]) -> float`, ki vrne povprečno vrednost števil v seznamu.",
+  "function_signature": "def povprecje(seznam: list[int]) -> float:",
+  "input_format": "Seznam celih števil `seznam` dolžine 1 do 1000.",
+  "output_format": "Vrni povprečje kot decimalno število.",
+  "constraints": ["-10000 ≤ seznam[i] ≤ 10000", "Seznam ne bo prazen."],
+  "examples": [
+    {
+      "input": "seznam = [10, 20, 30]",
+      "output": "20.0",
+      "explanation": "Enostaven primer s tremi števili."
+    },
+    {
+      "input": "seznam = [5]",
+      "output": "5.0",
+      "explanation": "Robni primer - en element."
+    },
+    {
+      "input": "seznam = [-1, 0, 1]",
+      "output": "0.0",
+      "explanation": "Primer z negativnimi števili."
+    }
+  ],
+  "solution": "def povprecje(seznam: list[int]) -> float:\n    return sum(seznam) / len(seznam)"
+}
