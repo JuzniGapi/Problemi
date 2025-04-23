@@ -1,5 +1,5 @@
 {
-  "id": 14,
+  "id": 4,
   "description": "Napiši funkcijo `fibonacci(n: int) -> int`, ki vrne n-to Fibonaccijevo število (zaporedje: 0, 1, 1, 2, 3, 5, ...).",
   "function_signature": "def fibonacci(n: int) -> int:",
   "input_format": "Celo število `n` (0 ≤ n ≤ 30).",
